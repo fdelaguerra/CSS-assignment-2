@@ -19,6 +19,7 @@ img {
 
 #cougar{
     background: #FFBD82;
+    color: #000;
 }
 
 #lion{
@@ -28,24 +29,31 @@ img {
 
 #tiger{
   background: #B26219;
+  color: #FFF;
+}
+
+#tiger .text {
+  color: #FFF;
 }
 
 section{
+    margin: 0;
+    margin: 0 1.5rem;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .text{
     margin:0;
     margin:1rem;
-    background: #FFF;
     color: #000;
-    padding: 3rem;
     font-size: 1rem;
     line-height: 1.25rem;
 }
 
 h2 {
-    text-align: center;
     margin: 0;
     margin-top: -1rem;
 
@@ -55,10 +63,11 @@ article {
     margin: 0;
     padding: 3rem ;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-content: stretch;
+    flex: 0 1 600px;
 }
 
 header {
@@ -121,22 +130,29 @@ a:hover {
     text-decoration: none;
 }
 
-article a {
+#tiger a {
     color: #FFF;
 }
-article a:hover {
+#tiger a:hover {
     color: #FFF;
     text-decoration: none;
 }
 
 #lion a {
-    color: #999;
+    color: #666;
 }
 #lion a:hover {
-    color: #999;
+    color: #666;
     text-decoration: none;
 }
 
+#cougar a {
+    color: #666;
+}
+#cougar a:hover {
+    color: #666;
+    text-decoration: none;
+}
 header a {
         color: #6ED4EA;
 }
